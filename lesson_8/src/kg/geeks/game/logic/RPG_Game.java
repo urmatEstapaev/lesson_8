@@ -21,8 +21,9 @@ public class RPG_Game {
         King king=new King("Aragorn",330,20);
         Magic magic1=new Magic("Asan", 305,30);
         Bomber bomber=new Bomber("Golum",150,17);
+        Witcher witcher = new Witcher("Lalala", 200, 10);
 
-        Hero[] heroes = {warrior1, doc, warrior2, magic, berserk, assistant, hacker, king, magic1, bomber};
+        Hero[] heroes = {warrior1, doc, warrior2, magic, berserk, assistant, hacker, king, magic1, bomber, witcher};
         printStatistics(boss, heroes);
         while (!isGameOver(boss, heroes)) {
             playRound(boss, heroes);

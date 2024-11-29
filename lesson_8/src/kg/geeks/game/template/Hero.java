@@ -12,6 +12,10 @@ public abstract class Hero extends GameEntity {
         return ability;
     }
 
+    public boolean isAlive() {
+        return getHealth() > 0;
+    }
+
     public void attack(Boss boss) {
         boss.setHealth(boss.getHealth() - this.getDamage());
     }
